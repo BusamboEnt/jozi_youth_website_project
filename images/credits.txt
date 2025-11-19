@@ -1,0 +1,12 @@
+Images sourced from Unsplash via source.unsplash.com queries.
+These images are hotlinked at runtime using Unsplash's source API (https://source.unsplash.com).
+
+Suggested photographer attributions (examples — Unsplash images are free to use but attribution is good practice):
+- Hero image: Unsplash (search results: https://unsplash.com/s/photos/youth-community)
+- Team portrait: Unsplash (search results: https://unsplash.com/s/photos/portrait-young-people)
+- Workshop banner: Unsplash (search results: https://unsplash.com/s/photos/workshop)
+- Event thumbnails: Unsplash (search results: https://unsplash.com/s/photos/community)
+
+If you prefer specific photographers, we can download exact images and add them to the images/ folder. For now the site uses live Unsplash queries so images load automatically.
+
+Unsplash license summary: photos are free to use (see https://unsplash.com/license). Do not re-sell unaltered copies of the photos.

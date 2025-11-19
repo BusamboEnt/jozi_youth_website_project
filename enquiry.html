@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enquire — Jozi Youth</title>
+  <meta name="description" content="Enquire about volunteering, sponsorship or events.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Jozi Youth</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Events</a>
+        <a href="enquiry.html">Enquire</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Enquiry</h2>
+    <form id="enquiryForm" novalidate>
+      <label>Full name
+        <input type="text" name="name" required minlength="3">
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Type of enquiry
+        <select name="type">
+          <option value="volunteer">Volunteer</option>
+          <option value="sponsor">Sponsor</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" required minlength="10"></textarea>
+      </label>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <div id="enquiryResult" role="status" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Jozi Youth — 2025</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

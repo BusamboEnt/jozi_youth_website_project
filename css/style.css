@@ -1,0 +1,27 @@
+:root{--accent:#1F8A70;--accent-2:#F2C94C;--bg:#fff;--text:#2D3142}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);margin:0;line-height:1.5;background:var(--bg)}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.25rem;color:var(--accent);margin:0}
+.main-nav a{margin-left:1rem;text-decoration:none;color:inherit}
+.menu-toggle{display:none}
+.hero{padding:6rem 0;color:#fff;text-shadow:1px 1px 4px rgba(0,0,0,0.6)}
+.hero .hero-content{background:rgba(0,0,0,0.25);padding:1.5rem;border-radius:8px;max-width:720px}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:2rem 0}
+.event-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.event-card{border:1px solid #eee;padding:1rem;border-radius:8px}
+.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem}
+label{display:block;margin:.6rem 0}
+input,textarea,select{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px}
+.event-img{height:180px;object-fit:cover;border-radius:6px;margin-bottom:.5rem}
+
+/* Responsive */
+@media (max-width:800px){
+  .features{grid-template-columns:1fr}
+  .event-list{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .menu-toggle{display:block}
+}

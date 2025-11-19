@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Events — Jozi Youth</title>
+  <meta name="description" content="Upcoming workshops and community events by Jozi Youth.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Jozi Youth</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Events</a>
+        <a href="enquiry.html">Enquire</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Upcoming Events & Workshops</h2>
+
+    <!-- Banner image from Unsplash source query -->
+    <div class="services-banner">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80"
+        alt="Youth in a workshop setting" style="width:100%; height:auto; border-radius:8px; margin-bottom:1rem;">
+    </div>
+
+    <div id="events" class="event-list">
+      <!-- JS will populate events here -->
+    </div>
+
+    <template id="event-template">
+      <article class="event-card">
+        <img class="event-img" alt="Event image" style="width:100%; border-radius:8px; margin-bottom:.5rem;">
+        <h3 class="event-title"></h3>
+        <p class="event-date"></p>
+        <p class="event-desc"></p>
+        <button class="btn register">Register</button>
+      </article>
+    </template>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Jozi Youth — 2025</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
