@@ -6,19 +6,27 @@
 /* 1. Variables & Theme */
 :root {
   /* Colors */
-  --primary: #0F766E; /* Deep Teal */
+  --primary: #0F766E;
+  /* Deep Teal */
   --primary-dark: #0D5F58;
-  --secondary: #F59E0B; /* Amber/Gold */
-  --accent: #F43F5E; /* Rose for CTAs */
-  
-  --text-main: #1F2937; /* Gray 900 */
-  --text-muted: #4B5563; /* Gray 600 */
-  --text-light: #9CA3AF; /* Gray 400 */
+  --secondary: #F59E0B;
+  /* Amber/Gold */
+  --accent: #F43F5E;
+  /* Rose for CTAs */
+
+  --text-main: #1F2937;
+  /* Gray 900 */
+  --text-muted: #4B5563;
+  /* Gray 600 */
+  --text-light: #9CA3AF;
+  /* Gray 400 */
   --text-white: #FFFFFF;
 
-  --bg-body: #F9FAFB; /* Gray 50 */
+  --bg-body: #F9FAFB;
+  /* Gray 50 */
   --bg-card: #FFFFFF;
-  --bg-footer: #111827; /* Gray 900 */
+  --bg-footer: #111827;
+  /* Gray 900 */
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -40,7 +48,9 @@
 }
 
 /* 2. Reset & Base Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -66,18 +76,36 @@ a {
   transition: color 0.2s ease;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
   margin-bottom: var(--space-sm);
   color: var(--text-main);
 }
 
-h1 { font-size: 2.5rem; font-weight: 800; }
-h2 { font-size: 2rem; font-weight: 700; }
-h3 { font-size: 1.5rem; font-weight: 600; }
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
 
-p { margin-bottom: var(--space-sm); }
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: var(--space-sm);
+}
 
 /* 3. Layout Utilities */
 .container {
@@ -149,7 +177,8 @@ p { margin-bottom: var(--space-sm); }
   color: var(--text-muted);
 }
 
-.main-nav a:hover, .main-nav a.active {
+.main-nav a:hover,
+.main-nav a.active {
   color: var(--primary);
 }
 
@@ -168,15 +197,28 @@ p { margin-bottom: var(--space-sm); }
   padding: var(--space-xl) 0;
   color: var(--text-white);
   text-align: center;
-  background-color: var(--primary); /* Fallback */
+  background-color: var(--primary);
+  /* Fallback */
   overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
   z-index: 1;
 }
 
@@ -191,7 +233,7 @@ p { margin-bottom: var(--space-sm); }
   font-size: 3rem;
   margin-bottom: var(--space-md);
   color: var(--text-white);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -224,7 +266,7 @@ p { margin-bottom: var(--space-sm); }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .features article:hover {
@@ -260,12 +302,21 @@ p { margin-bottom: var(--space-sm); }
   object-fit: cover;
 }
 
-.event-card h3, .event-card p, .event-card .btn {
+.event-card h3,
+.event-card p,
+.event-card .btn {
   margin: 0 var(--space-sm);
 }
 
-.event-card h3 { margin-top: var(--space-sm); }
-.event-card .btn { margin-bottom: var(--space-sm); margin-top: auto; align-self: start; }
+.event-card h3 {
+  margin-top: var(--space-sm);
+}
+
+.event-card .btn {
+  margin-bottom: var(--space-sm);
+  margin-top: auto;
+  align-self: start;
+}
 
 /* Forms */
 form {
@@ -283,7 +334,9 @@ label {
   font-weight: 500;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #E5E7EB;
@@ -293,7 +346,9 @@ input, textarea, select {
   transition: border-color 0.2s;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
@@ -330,13 +385,21 @@ input:focus, textarea:focus, select:focus {
     --space-xl: 5rem;
   }
 
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
+  h1 {
+    font-size: 2rem;
+  }
 
-  .hero h2 { font-size: 2.25rem; }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero h2 {
+    font-size: 2.25rem;
+  }
 
   .main-nav {
-    display: none; /* Hidden by default on mobile/tablet */
+    display: none;
+    /* Hidden by default on mobile/tablet */
     position: absolute;
     top: 80px;
     left: 0;
@@ -351,9 +414,10 @@ input:focus, textarea:focus, select:focus {
   .menu-toggle {
     display: block;
   }
-  
+
   .features {
-    grid-template-columns: 1fr; /* Stack features */
+    grid-template-columns: 1fr;
+    /* Stack features */
   }
 }
 
@@ -375,4 +439,3 @@ input:focus, textarea:focus, select:focus {
     grid-template-columns: 1fr;
   }
 }
-

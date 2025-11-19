@@ -18,3 +18,14 @@ Images are hotlinked from Unsplash using the Source API (https://source.unsplash
 - 2025-10-14: Initial commit — HTML pages and folder structure.
 - 2025-10-14: Added CSS and responsive styles; integrated Unsplash source images.
 - 2025-10-14: Added JS interactions and form validation; prepared SEO files.
+- 2025-11-19: Implemented responsive images using HTML5 `picture` element and updated hero styles.
+
+## Screenshots
+### Desktop
+![Desktop View](images/screenshots/desktop.png)
+
+### Tablet
+![Tablet View](images/screenshots/tablet.png)
+
+### Mobile
+![Mobile View](images/screenshots/mobile.png)
