@@ -40,16 +40,18 @@
         <input type="email" name="email" required>
       </label>
       <label>Type of enquiry
-        <select name="type">
-          <option value="volunteer">Volunteer</option>
-          <option value="sponsor">Sponsor</option>
-          <option value="other">Other</option>
-        </select>
-      </label>
-      <label>Message
-        <textarea name="message" required minlength="10"></textarea>
-      </label>
-      <button class="btn" type="submit">Submit</button>
+        <label>
+          Enquiry Type
+          <select name="type" required>
+            <option value="">Select an option...</option>
+            <option value="general">General Enquiry</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="workshop">Workshop Registration</option>
+            <option value="sponsor">Sponsorship</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" required minlength="10"></textarea></label>
+        <button class="btn" type="submit">Submit</button>
     </form>
     <div id="enquiryResult" role="status" aria-live="polite"></div>
   </main>

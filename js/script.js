@@ -129,18 +129,55 @@ document.addEventListener('DOMContentLoaded', function () {
       .openPopup();
   }
 
-  // Enquiry form validation + fake submit
+  // Enquiry form validation + fake AJAX submit
   const enquiryForm = document.getElementById('enquiryForm');
   if (enquiryForm) {
+    // Real-time validation
+    const inputs = enquiryForm.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+      input.addEventListener('input', () => {
+        if (input.checkValidity()) {
+          input.parentElement.classList.remove('error');
+        }
+      });
+    });
+
     enquiryForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
       if (!enquiryForm.checkValidity()) {
         enquiryForm.reportValidity();
         return;
       }
-      const result = document.getElementById('enquiryResult');
-      result.textContent = 'Thank you! Your enquiry has been received.';
-      enquiryForm.reset();
+
+      // Simulate AJAX
+      const btn = enquiryForm.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      enquiryForm.classList.add('loading');
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        enquiryForm.classList.remove('loading');
+
+        const fd = new FormData(enquiryForm);
+        const type = fd.get('type');
+        let message = 'Thank you! Your enquiry has been received.';
+
+        if (type === 'volunteer') {
+          message = 'Thanks for volunteering! Our coordinator will contact you shortly with next steps.';
+        } else if (type === 'sponsor') {
+          message = 'Thank you for your interest in sponsoring. We will be in touch to discuss partnership opportunities.';
+        } else if (type === 'workshop') {
+          message = 'Registration received! We look forward to seeing you at the workshop.';
+        }
+
+        const result = document.getElementById('enquiryResult');
+        result.innerHTML = `<div class="success-message">${message}</div>`;
+        enquiryForm.reset();
+      }, 1500); // 1.5s simulated delay
     })
   }
 
