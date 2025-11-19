@@ -1,5 +1,12 @@
 # Jozi Youth — Website Project
 
+Arsene B Tshibanda 
+
+FINAL POE - PART 3 
+Student no: ST10497531
+
+19 November 2025
+
 ## Overview
 Jozi Youth is a youth outreach website built as part of the Web Project PoE.
 
@@ -13,6 +20,8 @@ Images are hotlinked from Unsplash using the Source API (https://source.unsplash
 - Unsplash. (2025). *Unsplash* [online]. Available at: https://unsplash.com (Accessed: 14 October 2025).
 - Mozilla Developer Network. (2025). *Using the srcset attribute* [online]. Available at: https://developer.mozilla.org (Accessed: 14 October 2025).
 - W3C. (2025). *HTML5 specification* [online]. Available at: https://www.w3.org (Accessed: 14 October 2025).
+- Leaflet. (2025). *Leaflet - an open-source JavaScript library for mobile-friendly interactive maps* [online]. Available at: https://leafletjs.com (Accessed: 19 November 2025).
+- OpenStreetMap. (2025). *OpenStreetMap* [online]. Available at: https://www.openstreetmap.org (Accessed: 19 November 2025).
 
 ## Changelog
 - 2025-10-14: Initial commit — HTML pages and folder structure.
