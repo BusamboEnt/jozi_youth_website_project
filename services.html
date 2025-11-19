@@ -40,6 +40,10 @@
         style="width:100%; height:auto; border-radius:8px; margin-bottom:1rem;">
     </div>
 
+    <div class="controls">
+      <input type="text" id="eventSearch" placeholder="Search events..." aria-label="Search events">
+    </div>
+
     <div id="events" class="event-list">
       <!-- JS will populate events here -->
     </div>
@@ -54,6 +58,12 @@
       </article>
     </template>
   </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+  </div>
 
   <footer class="site-footer">
     <div class="container">

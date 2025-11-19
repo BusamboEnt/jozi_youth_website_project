@@ -19,6 +19,7 @@ Images are hotlinked from Unsplash using the Source API (https://source.unsplash
 - 2025-10-14: Added CSS and responsive styles; integrated Unsplash source images.
 - 2025-10-14: Added JS interactions and form validation; prepared SEO files.
 - 2025-11-19: Implemented responsive images using HTML5 `picture` element and updated hero styles.
+- 2025-11-19: Added FAQ Accordion (About), Leaflet Map (Contact), Event Search and Lightbox (Services) for Part 3.
 
 ## Screenshots
 ### Desktop
